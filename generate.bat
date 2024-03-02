@@ -16,7 +16,7 @@ echo Archivo BaseController.php copiado exitosamente.
 copy MVC_structure_generator\app\Controllers\IndexController.php app\Controllers\IndexController.php
 echo Archivo IndexController.php copiado exitosamente.
 
-copy MVC_structure_generator\app\Views\index_view.php app\Config\index_view.php
+copy MVC_structure_generator\app\Views\index_view.php app\Views\index_view.php
 echo Archivo index_view.php copiado exitosamente.
 
 copy MVC_structure_generator\app\Core\Router.php app\Core\Router.php
