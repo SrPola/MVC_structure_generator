@@ -30,7 +30,6 @@ echo Archivo .htaccess creado exitosamente.
 copy MVC_structure_generator\composer.json .\composer.json
 echo Archivo composer.json creado exitosamente.
 
-
 :: Instalacion de composer
 composer install
 echo Instalación de dependencias completada.
