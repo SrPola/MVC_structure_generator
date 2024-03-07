@@ -5,7 +5,7 @@
     use PDO;
     use PDOException;
 
-    abstract class DBAsbtractModel
+    abstract class DBAbstractModel
     {
         private static $db_host = DBHOST; // database en docker
         private static $db_user = DBUSER;
