@@ -1,18 +1,12 @@
 <?php
-    require_once 'vendor/autoload.php';
+    require 'vendor/autoload.php';
     use Dotenv\Dotenv;
-    use Illuminate\Database\Capsule\Manager as Capsule;
 
     $dontenv = Dotenv::createImmutable(__DIR__)->load();
+    define("DBHOST", $_ENV['DBHOST']);
+    define("DBNAME", $_ENV['DBNAME']);
+    define("DBUSER", $_ENV['DBUSER']);
+    define("DBPASS", $_ENV['DBPASS']);
+    define("DBPORT", $_ENV['DBPORT']);
 
-    $capsule = new Capsule;
-    $capsule->addConnection([
-        "driver" => "mysql",
-        "host" => $_ENV['DBHOST'],
-        "username" => $_ENV['DBUSER'],
-        "password" => $_ENV['DBPASS'],
-        "database" => $_ENV['DBNAME'],
-        "port" => $_ENV['DBPORT']
-    ]);
-    $capsule->setAsGlobal();
-    $capsule->bootEloquent();
+    
