@@ -8,6 +8,15 @@ mkdir app\Views
 mkdir app\Models
 
 :: Copia de ficheros base
+copy MVC_structure_generator\bootstrap.php .\bootstrap.php
+echo Archivo bootstrap.php copiado exitosamente.
+
+copy MVC_structure_generator\.env .\.env
+echo Archivo .env copiado exitosamente.
+
+copy MVC_structure_generator\.env.example .\.env.example
+echo Archivo .env.example copiado exitosamente.
+
 copy MVC_structure_generator\app\Models\DBAbstractModel.php app\Models\DBAbstractModel.php
 echo Archivo DBAbstractModel.php copiado exitosamente.
 
